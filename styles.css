@@ -1,14 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(243, 243, 164); /* Set background color to yellow */
-    margin: 0;
+    background-color: rgb(247, 246, 233); 
     padding: 0;
 }
 .navbar {
     background-color: #070707;
     overflow: hidden;
     display: flex;
-    justify-content: center; /* Center the content horizontally */
+    justify-content: center; 
 }
 .navbar a {
     display: block;
@@ -16,11 +15,11 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    text-transform: uppercase; /* Uppercase */
-    font-weight: bold; /* Bold */
+    text-transform: uppercase; 
+    font-weight: bold; 
 }
 .navbar a:hover {
-    background-color: #f4f806;
+    background-color: #f0ff1e;
     color: black;
 }
 h1 {
@@ -29,12 +28,13 @@ h1 {
 }
 p {
     color: #000000;
-    font-weight: bold; /* Bold */
-    font-style: italic; /* Italics */
-    padding: 10px; /* Add padding */
-    background-color: rgba(231, 217, 19, 0.1); /* Background box */
-    border-radius: 5px; /* Rounded corners */
-    text-align: left; /* Align to the left */
+    font-weight: bold; 
+    font-style: italic; 
+    padding: 20px; 
+    margin-left: -10px;
+    background-color: hsla(56, 86%, 46%, 0.342); 
+    border-radius: 100px; 
+    text-align: left; 
 }
 h2 {
     color: #444;
@@ -47,11 +47,15 @@ ul {
 .image-container {
     text-align: right;
     position: relative;
-    margin-bottom: -250px; /* Add margin to create spacing */
+    margin-bottom: 50px; 
+    padding-top: 10px;
 }
 .top-right {
     position: absolute;
-    top: -180px; 
+    top: 0px; 
     right: 0;
 }
 
+#pups {
+    display: flex;
+  }

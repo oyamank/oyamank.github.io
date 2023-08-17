@@ -3,7 +3,50 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <style>
-        
+       
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        p, ul {
+            text-align: left;
+            max-width: 65%; 
+            margin-right: 20px; 
+            padding: 10px; 
+            background-color: rgb(246, 250, 44); 
+            transition: background-color 0.3s ease;
+            font-family: 'Tahoma', sans-serif;
+            border-radius: 8px;
+            padding-left: 20px; 
+        }
+
+        p:hover, ul:hover {
+            background-color: rgb(230, 230, 220); 
+        }
+
+        ul {
+            font-weight: bold; 
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: -300px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            text-align: left;
+        }
+
+        h2 {
+            text-align: left;
+        }
     </style>
     <title>Pargo local deliveries</title>
 </head>
@@ -11,50 +54,51 @@
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
-        <a href="activity.html">Activity</a> 
+        <a href="activity.html">Activity</a>
         <a href="account.html">Account</a>
     </div>
-    <div id="content"> 
-    <h1>Welcome to PARGO LOCO</h1>
-    <p>Pargo is a convenient last mile logistics solution that offers deliveries and collections at 2500+ pickup points nationally! Pargo LOCO 
-        makes daily deliveries of all essentials to your most convinient pick up point </p>
+    <div id="content" class="content-wrapper">
+        <h1>Welcome to PARGO LOCO!</h1>
+        <p>Pargo is a convenient last mile logistics solution that offers deliveries and collections at 2500+ pickup points nationally! Pargo LOCO makes daily deliveries of all essentials to your most convenient pick-up point</p>
     
-    <h2>About Us</h2>
-    <p>Pargo is a smart logistics company that solves the challenges of last-mile distribution. We allow consumers, companies and couriers to send and receive parcels at pickup points located at convenient retail stores across Southern Africa.
-
-        75% of the population in sub-saharan Africa live and work in areas that have limited access to goods and services. These areas include informal settlements and rural areas, which often lack proper residential addresses and are challenging and expensive to service by couriers. High security housing estates, large office buildings and universities are other examples of areas where a courier delivery is almost impossible. Additionally, people have a busy lifestyle and don’t have someone at home to send or receive parcels on their behalf all the time, leading to missed deliveries and disappointment..</p>
+        <h2>About Us</h2>
+        <p>Pargo is a smart logistics company that solves the challenges of last-mile distribution. We allow consumers, companies and couriers to send and receive parcels at pickup points located at convenient retail stores across Southern Africa. 75% of the population in sub-saharan Africa live and work in areas that have limited access to goods and services...</p>
     
-    <h2>Our Services</h2>
-    <ul>
-        <li>Pick-up-point to pick-up-point daily deliveries</li>
-        <li>Pick-up-point to pick-up-point deliveries nationally</li>
-        <li>Home deliviries</li>
-    </ul>
+        <h2>Our Services</h2>
+        <ul>
+            <li>Pick-up-point to pick-up-point daily deliveries</li>
+            <li>Pick-up-point to pick-up-point deliveries nationally</li>
+            <li>Home deliveries</li>
+        </ul>
     
-    <h2>Contact Information</h2>
-    <p>
-        For inquiries and more information, please contact us at:
-        <br>
-        Email: support@pargo.co.za
-        <br>
-        Phone: 021 447 3636
-    </p>
+        <h2>Contact Information</h2>
+        <p>
+            For inquiries and more information, please contact us at:
+            <br>
+            Email: support@pargo.co.za
+            <br>
+            Phone: 021 447 3636
+        </p>
     
-    <img src="image3.jpg" alt="Image 3">
+        <div class="image-container">
+            <img src="Image 3" class="top-right" style="max-width: 500%; height: 300px;">
+        </div>
     
-    <a href="https://pargo.co.za/">Visit our website</a>
+        <div class="image-container">
+            <img src="https://pargo.co.za/wp-content/uploads/2021/06/new-pargo-branding-at-pickup-points.jpg" alt="Image 1" class="top-right" style="max-width: 500%; height: 450px;">
+        </div>
     
-    <div class="image-container">
-        <img src="https://pargo.co.za/wp-content/uploads/2017/08/pargo.png" alt="Image 1" class="top-right">
+        <div class="image-container">
+            <img src="https://img.bidorbuy.co.za/image/upload/f_auto,q_auto:eco/user_images/site_images/211008131315_3000_pickup_points.png" alt="Image 2" class="top-right" style="padding:auto">
+        </div>
+    
     </div>
-    
-    <div class="image-container">
-        <img src="https://img.bidorbuy.co.za/image/upload/f_auto,q_auto:eco/user_images/site_images/211008131315_3000_pickup_points.png" alt="Image 2" class="top-right">
-    </div>
-</div>
-    
 </body>
 </html>
+
+
+
+
 
 
 

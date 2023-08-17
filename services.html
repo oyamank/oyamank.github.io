@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Uber Ride Request</title>
     <link rel="stylesheet" href="styles.css">
+    <title>PICK-UP-POINT Request</title>
+    
     <style>
-        /* Your existing CSS styles */
+        
+
+        #requestRideButton {
+            margin-top: 20px;
+            text-transform: uppercase;
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #requestRideButton:hover {
+            background-color: rgb(241, 241, 85);
+        }
+
+        .top-center {
+            display: block;
+            width: 100%; 
+            max-height: 350px; 
+            margin: 20px auto;
+        }
     </style>
 </head>
 <body>
@@ -14,48 +37,22 @@
         <a href="activity.html">Activity</a>
         <a href="account.html">Account</a>
     </div>
-    <div class="image-container">
-        <img src="https://cdn.shopify.com/s/files/1/0264/5839/0588/files/pargo-how-to_480x480.png?v=1661326731" alt="Image" class="center">
-    </div>
 
-    <h1>Request an Uber Ride</h1>
+    <img src="https://cdn.shopify.com/s/files/1/0264/5839/0588/files/pargo-how-to_480x480.png?v=1661326731" alt="Image" class="top-center"> 
+
     <button id="requestRideButton">Request Pick-up-point</button>
 
     <div id="map"></div>
-
-    <script>
-        // Replace with your API key (if required)
-        const MAP_API_KEY = 'YOUR_MAP_API_KEY';
-
-        function initMap() {
-            // Replace with the coordinates for the starting point
-            const startLocation = { lat: 37.7749, lng: -122.4194 };
-            const map = new google.maps.Map(document.getElementById('map'), {
-                center: startLocation,
-                zoom: 14
-            });
-
-            // Add a marker for the starting point
-            new google.maps.Marker({
-                position: startLocation,
-                map: map,
-                title: 'Starting Point'
-            });
-        }
-
-        function requestRide() {
-            // This is a placeholder function
-            // In a real application, you would handle the Uber API integration here
-            alert('Ride requested!');
-
-            // Start tracking the ride (not implemented in this example)
-        }
-
-        document.getElementById('requestRideButton').addEventListener('click', requestRide);
-    </script>
-
-    <!-- Include Google Maps API script (replace with your API script URL) -->
-    <script src="https://pargo.co.za/find-a-store/" async defer></script>
+    <div id="pups"> 
+        <iframe src="https://map.pargo.co.za/" title="Starting point" width="500" height="500">
+        </iframe>
+    </div> 
 </body>
 </html>
+
+
+
+
+
+
 
